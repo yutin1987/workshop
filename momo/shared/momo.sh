@@ -27,7 +27,6 @@ case "$1" in
 EOF
       echo "Include ${QPKG_WEB_CONFIG}" >> ${SYS_WEB_CONFIG}
       ${SYS_WEB_INIT} restart &>/dev/null
-    fi
     ;;
 
   stop)
