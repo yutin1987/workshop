@@ -30,7 +30,7 @@ EOF
     ;;
 
   stop)
-    msg "remove web interface"
+    echo "remove web interface"
     sed -i '/${QPKG_WEB_CONFIG}/d' ${SYS_WEB_CONFIG}
     ${SYS_WEB_INIT} restart &>/dev/null
     ;;
