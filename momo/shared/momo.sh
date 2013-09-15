@@ -4,6 +4,7 @@ QPKG_NAME="momo"
 
 QPKG_PATH=$(/sbin/getcfg $QPKG_NAME Install_Path -f /etc/config/qpkg.conf)
 QPKG_WEB="${QPKG_PATH}/web"
+# /share/HDB_DATA/.qpkg/momo/web
 
 SYS_WEB_INIT="/etc/init.d/Qthttpd.sh"
 SYS_WEB_CONFIG="/etc/config/apache/apache.conf"
