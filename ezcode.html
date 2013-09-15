@@ -1,0 +1,26 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/favicon.png">
+
+<script type="text/JavaScript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/JavaScript" src="./ezencode.js"></script>
+<script type="text/JavaScript">
+  $(function(){
+    $('#submit').on('click', function(){
+      console.log($('#pwd').val());
+      console.log(ezEncode($('#pwd').val()));
+      $('#encode').text(ezEncode($('#pwd').val()));
+    });
+  });
+</script>
+<body>
+
+<input id="pwd" name="pwd">
+<span id="encode"></span>
+<button id="submit">ezEncdoe</button>
+
+</body>
+</html>
